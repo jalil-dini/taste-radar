@@ -15,6 +15,10 @@ class Radar(unittest.TestCase):
         for no in ("Free shipping on orders over $75", "Free returns", "free trial"):
             self.assertFalse(offers.FREE_RE.search(no), no)
 
+    def test_ended_offers(self):
+        self.assertTrue(offers.ENDED_RE.search("we had to make the difficult decision to suspend free samples"))
+        self.assertFalse(offers.ENDED_RE.search("Grab a free sticker"))
+
     def test_how_to_ask(self):
         self.assertEqual(offers.how_to_ask("", "send a self-addressed stamped envelope"), "mail")
         form = '<input name="address"><input name="city"><input name="zip">'

@@ -19,6 +19,8 @@ UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML,
 FREE_RE = re.compile(r"free\W+(?:[\w&'-]+\W+){0,2}?(?:stickers?|decals?|samples?|fan packs?|catalogs?|swag)\b|stickers? requests?|request\W+(?:[\w&'-]+\W+){0,3}?(?:stickers?|samples?|catalogs?)\b|fan packs?", re.I)
 SKIP_HOSTS = ("facebook.", "instagram.", "reddit.", "pinterest.", "youtube.", "tiktok.", "x.com", "twitter.", "amazon.",
               "ebay.", "etsy.", "redbubble.", "wikipedia.", "linkedin.")
+ENDED_RE = re.compile(r"suspend(ed)? (our |all )?(free )?(samples?|stickers?|offers?)|(samples?|stickers?|offer|program) (is|are|has been) (no longer available|discontinued|suspended|paused)"
+                      r"|no longer (offer|send|provid)(ing)? (free )?(samples?|stickers?)|(offer|promotion|program) has (ended|expired)|out of (free )?(samples?|stickers?)", re.I)
 AGGREGATOR_RE = re.compile(r"freebie|free-?stuff|free-?samples|hunt4freebies|tryspree|ilovefreebies|moneypantry|wallethacks|dollarsanity", re.I)
 
 QUESTIONS = {
@@ -220,6 +222,9 @@ def check_brand(brand, home=""):
                 start = max(0, m.start() - 600) if m else 0
                 view = {"title": view["title"], "page": shown["text"][start:start + 2200], "form_fields": shown["fields"] or "none visible"}
                 text = shown["text"]
+        if ENDED_RE.search(text):
+            skipped.append({"url": url, "reason": "the page says the offer has ended", "scores": None})
+            continue
         a = {k: v["noul"] for k, v in jev(view, qs).items()}
         scores = {k: round(v, 2) for k, v in a.items()}
         for name, limit, why in (("sweepstakes", 0.7, "a sweepstakes entry"), ("excluded", 0.6, "limited to another area"),
