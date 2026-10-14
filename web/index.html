@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taste Radar</title>
+<style>
+:root{--bg:#f7f5f0;--card:#fff;--ink:#17161b;--mute:#615e69;--line:#e3dfd6;--soft:#efece4;--accent:#5a3fd8;--on:#fff;--good:#1d7a4c;--warn:#9a5b00;--bad:#a1322b}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111114;--card:#1b1b20;--ink:#f0eff3;--mute:#a3a0ab;--line:#2c2c33;--soft:#18181c;--accent:#a796ff;--on:#120f22;--good:#62d39a;--warn:#f0b04f;--bad:#ff8f86}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:1000px;margin:0 auto;padding:40px 16px 90px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:clamp(30px,5vw,46px);line-height:1.08;letter-spacing:-.03em;margin:8px 0 12px;max-width:16em}
+.lede{font-size:18px;color:var(--mute);max-width:36em;margin:0 0 26px}
+.ask{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+label{display:block;font-size:13px;font-weight:600;color:var(--mute);margin:0 0 6px}
+.likes{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:8px}
+input{width:100%;font:inherit;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
+input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.row{display:flex;gap:12px;align-items:end;flex-wrap:wrap;margin-top:14px}
+.row .home{flex:1 1 240px}
+button.go{font:inherit;font-weight:650;background:var(--accent);color:var(--on);border:0;border-radius:10px;padding:12px 20px;cursor:pointer}
+button.go:disabled{opacity:.55;cursor:default}
+.note{font-size:13.5px;color:var(--mute);margin-top:12px}
+h2{font-size:21px;letter-spacing:-.015em;margin:36px 0 10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--line);background:var(--card);border-radius:20px;padding:5px 12px;font-size:14px}
+.chip s{color:var(--mute)}
+.summary{color:var(--mute);font-size:15px;margin:-2px 0 12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:8px}
+.card.offer{border-color:var(--good)}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.brand{font-weight:700;font-size:17px}
+.aff{font-size:12.5px;color:var(--mute);white-space:nowrap}
+.status{font-size:13px;font-weight:650}
+.status.offer{color:var(--good)}.status.skipped{color:var(--warn)}.status.none{color:var(--mute)}
+.excerpt{font-size:14px;color:var(--mute);background:var(--soft);border-radius:8px;padding:8px 10px;max-height:6.2em;overflow:hidden}
+.card a.open{align-self:flex-start;font-weight:650;color:var(--accent);text-decoration:none;font-size:15px}
+.card a.open:hover{text-decoration:underline}
+details{font-size:13.5px;color:var(--mute)}summary{cursor:pointer}
+.bars{display:grid;grid-template-columns:auto 1fr auto;gap:4px 8px;align-items:center;margin-top:6px}
+.bar{height:6px;border-radius:3px;background:var(--soft);overflow:hidden}.bar i{display:block;height:100%;background:var(--accent);border-radius:3px}
+.spin{width:14px;height:14px;border:2px solid var(--line);border-top-color:var(--accent);border-radius:50%;display:inline-block;animation:r .8s linear infinite;vertical-align:-2px;margin-right:6px}
+@keyframes r{to{transform:rotate(360deg)}}
+.err{color:var(--bad);margin-top:12px}
+.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:10px}
+.how div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:15px}
+.how b{display:block;margin-bottom:4px}
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">Taste Radar</div>
+  <h1>Free stuff from the brands you'd actually like.</h1>
+  <p class="lede">Name a few things you love. Qloo's taste graph finds the brands people like you also love, then an agent checks each brand's own website for a real free offer: stickers, samples, fan packs, catalogs.</p>
+
+  <form class="ask" id="ask">
+    <label>Things you love: artists, shows, films, books, places, brands</label>
+    <div class="likes">
+      <input name="like" placeholder="e.g. Phoebe Bridgers" autocomplete="off">
+      <input name="like" placeholder="e.g. The Bear" autocomplete="off">
+      <input name="like" placeholder="e.g. Patagonia" autocomplete="off">
+      <input name="like" placeholder="one more (optional)" autocomplete="off">
+    </div>
+    <div class="row">
+      <div class="home"><label for="home">Where you live, so region-locked offers are left out</label><input id="home" placeholder="City, State, Country" autocomplete="off"></div>
+      <button class="go" id="go" type="submit">Find my freebies</button>
+    </div>
+    <p class="note">Nothing is filled in or sent for you. Every result links to the brand's own page, and you decide.</p>
+    <div class="err" id="err" hidden></div>
+  </form>
+
+  <section id="out" hidden>
+    <h2>What Qloo understood</h2>
+    <div class="chips" id="understood"></div>
+    <h2>Brands that match your taste</h2>
+    <p class="summary" id="summary"></p>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <h2>How it decides</h2>
+  <div class="how">
+    <div><b>1. Your taste</b>Qloo turns what you named into entities, then asks which brands people with that taste over-index on.</div>
+    <div><b>2. The brand's own site</b>The agent searches only the brand's own domain for a free-item page, opening it in a real browser when the form is drawn by script.</div>
+    <div><b>3. Five guard questions</b>A typed decision model asks: is it a real free offer for anyone? A sweepstakes? A cause sign-up? Members only? Outside your area? Anything doubtful is left out.</div>
+  </div>
+</main>
+<script>
+const $ = id => document.getElementById(id);
+const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const HOW = {form: "Request form on the page", mail: "Ask by mail", email: "Ask by email", page: "Instructions on the page"};
+const GUARD = {offer: "Real free offer", mail_or_email: "Ask by mail or email", sweepstakes: "Sweepstakes", cause: "Cause sign-up", restricted: "Members or business only", excluded: "Outside your area"};
+let counts = {};
+
+async function post(path, body) {
+  const r = await fetch(path, {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify(body)});
+  const d = await r.json();
+  if (!r.ok || d.error) throw new Error(d.error || ("HTTP " + r.status));
+  return d;
+}
+
+function bars(scores) {
+  return `<div class="bars">${Object.entries(scores || {}).map(([k, v]) => `<span>${esc(GUARD[k] || k)}</span><span class="bar"><i style="width:${Math.round(v * 100)}%"></i></span><span>${Math.round(v * 100)}%</span>`).join("")}</div>`;
+}
+
+function render(card, b, r) {
+  card.className = "card " + r.status;
+  const aff = b.affinity ? `<span class="aff">taste match ${Math.round(b.affinity * 100)}%</span>` : "";
+  if (r.status === "offer") {
+    card.innerHTML = `<div class="top"><span class="brand">${esc(b.name)}</span>${aff}</div>
+      <span class="status offer">Free offer found · ${esc(HOW[r.how] || r.how)}</span>
+      ${r.excerpt ? `<div class="excerpt">${esc(r.excerpt)}</div>` : ""}
+      <a class="open" href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">Open the request page</a>
+      <details><summary>Why it passed the guards</summary>${bars(r.scores)}</details>`;
+  } else {
+    card.innerHTML = `<div class="top"><span class="brand">${esc(b.name)}</span>${aff}</div>
+      <span class="status ${esc(r.status)}">${r.status === "skipped" ? "Left out: " : "Nothing free: "}${esc(r.reason)}</span>
+      ${r.scores ? `<details><summary>Guard scores</summary>${bars(r.scores)}</details>` : ""}`;
+  }
+  counts[r.status] = (counts[r.status] || 0) + 1;
+  summary();
+}
+
+function summary() {
+  const total = document.querySelectorAll("#grid .card").length, done = (counts.offer || 0) + (counts.skipped || 0) + (counts.none || 0);
+  $("summary").innerHTML = (done < total ? `<span class="spin"></span>Checked ${done} of ${total} brands. ` : `Checked all ${total} brands. `) +
+    `${counts.offer || 0} with a real free offer, ${counts.skipped || 0} left out by the guards.`;
+}
+
+$("ask").addEventListener("submit", async e => {
+  e.preventDefault();
+  const likes = [...document.querySelectorAll("input[name=like]")].map(i => i.value.trim()).filter(Boolean);
+  const home = $("home").value.trim();
+  $("err").hidden = true;
+  if (!likes.length) { $("err").textContent = "Name at least one thing you love."; $("err").hidden = false; return; }
+  $("go").disabled = true; $("go").textContent = "Reading your taste…";
+  try {
+    const t = await post("/api/taste", {likes, home});
+    $("out").hidden = false; counts = {};
+    $("understood").innerHTML = t.understood.map(u => u.matched ? `<span class="chip">${esc(u.asked)} → ${esc(u.matched)}</span>` : `<span class="chip"><s>${esc(u.asked)}</s> not found</span>`).join("");
+    const grid = $("grid"); grid.innerHTML = "";
+    if (!t.brands.length) { $("summary").textContent = "Qloo found no brands for that mix. Try naming something more widely known."; return; }
+    const cards = t.brands.map(b => { const c = document.createElement("div"); c.className = "card"; c.innerHTML = `<div class="top"><span class="brand">${esc(b.name)}</span></div><span class="status none"><span class="spin"></span>Checking…</span>`; grid.appendChild(c); return [b, c]; });
+    summary();
+    $("go").textContent = "Checking brands…";
+    let next = 0;
+    const worker = async () => { while (next < cards.length) { const [b, c] = cards[next++]; try { render(c, b, await post("/api/check", {brand: b, home})); } catch (err) { render(c, b, {status: "none", reason: "check failed: " + err.message}); } } };
+    await Promise.all([worker(), worker(), worker()]);
+  } catch (err) {
+    $("err").textContent = err.message; $("err").hidden = false;
+  } finally {
+    $("go").disabled = false; $("go").textContent = "Find my freebies";
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "taste-radar",
+  "private": true,
+  "description": "Headless page rendering for Taste Radar",
+  "dependencies": { "playwright-core": "1.63.0" }
+}

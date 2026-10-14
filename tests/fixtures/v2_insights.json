@@ -1,0 +1,8 @@
+{"results": {"entities": [
+ {"entity_id": "MOCK-B1", "name": "Saucony", "properties": {}, "query": {"affinity": 0.91}},
+ {"entity_id": "MOCK-B2", "name": "Shibumi Shade", "properties": {}, "query": {"affinity": 0.88}},
+ {"entity_id": "MOCK-B3", "name": "Wolverine", "properties": {}, "query": {"affinity": 0.84}},
+ {"entity_id": "MOCK-B4", "name": "Madera Outdoor", "properties": {}, "query": {"affinity": 0.81}},
+ {"entity_id": "MOCK-B5", "name": "Body Glove", "properties": {}, "query": {"affinity": 0.79}},
+ {"entity_id": "MOCK-B6", "name": "Patagonia", "properties": {}, "query": {"affinity": 0.77}}
+]}}
