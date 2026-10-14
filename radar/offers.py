@@ -14,7 +14,7 @@ import urllib.parse
 import urllib.request
 
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-FREE_RE = re.compile(r"free\W+(?:[\w&'-]+\W+){0,2}?(?:stickers?|decals?|samples?|fan packs?|catalogs?|swag)\b|stickers? requests?|request (?:a |your )?(?:free )?(?:stickers?|samples?|catalog)|fan packs?", re.I)
+FREE_RE = re.compile(r"free\W+(?:[\w&'-]+\W+){0,2}?(?:stickers?|decals?|samples?|fan packs?|catalogs?|swag)\b|stickers? requests?|request\W+(?:[\w&'-]+\W+){0,3}?(?:stickers?|samples?|catalogs?)\b|fan packs?", re.I)
 SKIP_HOSTS = ("facebook.", "instagram.", "reddit.", "pinterest.", "youtube.", "tiktok.", "x.com", "twitter.", "amazon.",
               "ebay.", "etsy.", "redbubble.", "wikipedia.", "linkedin.")
 AGGREGATOR_RE = re.compile(r"freebie|free-?stuff|free-?samples|hunt4freebies|tryspree|ilovefreebies|moneypantry|wallethacks|dollarsanity", re.I)
@@ -105,7 +105,7 @@ def best_excerpt(text):
     """The sentence-sized passage around the free-item mention that reads most like prose."""
     best = None
     for m in FREE_RE.finditer(text):
-        around = text[max(0, m.start() - 160):m.end() + 240]
+        around = text[m.start():m.start() + 320]
         cost = code_density(around) + (1.0 if m.start() < 200 else 0.0)   # a mention in the title sits beside the menu
         if best is None or cost < best[0]:
             best = (cost, around)

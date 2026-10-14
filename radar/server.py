@@ -53,8 +53,10 @@ class Handler(BaseHTTPRequestHandler):
         self.wfile.write(data)
 
     def do_GET(self):
+        if self.path == "/api/health":
+            return self.send(200, {"ok": True, "mock": qloo.MOCK})
         if self.path in ("/", "/index.html"):
-            return self.send(200, open(os.path.join(ROOT, "web", "index.html"), "rb").read(), "text/html; charset=utf-8")
+            return self.send(200, open(os.path.join(ROOT, "docs", "index.html"), "rb").read(), "text/html; charset=utf-8")
         self.send(404, {"error": "not found"})
 
     def do_POST(self):
