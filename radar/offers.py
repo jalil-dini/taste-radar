@@ -10,6 +10,8 @@ import json
 import os
 import re
 import subprocess
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -47,10 +49,17 @@ def search(query):
         return []
 
 
-def fetch(url):
+def fetch(url, tries=2):
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "text/html"})
-    with urllib.request.urlopen(req, timeout=20) as r:
-        return r.read(600000).decode(r.headers.get_content_charset() or "utf-8", "replace")
+    for attempt in range(tries):
+        try:
+            with urllib.request.urlopen(req, timeout=20) as r:
+                return r.read(600000).decode(r.headers.get_content_charset() or "utf-8", "replace")
+        except urllib.error.HTTPError:
+            raise                                   # a real answer such as 404: retrying will not change it
+        except Exception:
+            if attempt == tries - 1:
+                raise
 
 
 def text_of(doc):
@@ -89,7 +98,16 @@ def site_answers(h):
         return False
 
 
+official_site_cache = {}
+
+
 def official_site(brand):
+    site = _official_site(brand)
+    official_site_cache[brand["name"]] = site
+    return site
+
+
+def _official_site(brand):
     if brand.get("website"):
         return host(brand["website"])
     s = slug(brand["name"])
@@ -181,6 +199,8 @@ def check_brand(brand, home=""):
     for url in pages:
         if loaded >= 6:
             break
+        if url.startswith("https://" + official_site_cache.get(brand["name"], "~")) and url.endswith(GUESS_PATHS):
+            time.sleep(0.4)                         # guessed addresses: go gently, sites rate-limit bursts of 404s
         try:
             doc = fetch(url)
         except Exception:
