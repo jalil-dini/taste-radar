@@ -7,6 +7,7 @@ POST /api/check   {"brand": {...}, "home": "..."} -> whether that brand has a re
 import hashlib
 import json
 import os
+import re
 import threading
 from concurrent.futures import ThreadPoolExecutor
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -30,10 +31,27 @@ def cached(kind, key, fn):
     return value
 
 
+STOP = {"the", "a", "an", "of", "and", "magazine", "inc", "co", "company", "brand"}
+
+
+def words(text):
+    return {w for w in re.findall(r"[a-z0-9']+", text.lower().replace("’", "'")) if w not in STOP and len(w) > 1}
+
+
+def best_match(asked, results):
+    """Qloo's search always returns something, even for names it does not know ("Thrasher Magazine" -> Elle).
+    Accept only a result that shares a real word with what the person typed."""
+    want = words(asked)
+    for r in results:
+        if want & words(r["name"] or ""):
+            return r
+    return None
+
+
 def taste(likes, home):
     likes = [l.strip() for l in likes if l.strip()][:6]
     with ThreadPoolExecutor(4) as pool:
-        found = list(pool.map(lambda l: (qloo.search(l) or [None])[0], likes))
+        found = list(pool.map(lambda l: best_match(l, qloo.search(l)), likes))
     understood = [{"asked": l, "matched": f["name"] if f else None, "id": f["id"] if f else None} for l, f in zip(likes, found)]
     ids = [u["id"] for u in understood if u["id"]]
     brands = qloo.brands_for(ids, take=24) if ids else []

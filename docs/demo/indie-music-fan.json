@@ -1,0 +1,489 @@
+{
+ "name": "Indie music fan",
+ "home": "Orlando, Florida, USA",
+ "likes": [
+  "Phoebe Bridgers",
+  "The Bear",
+  "Patagonia"
+ ],
+ "understood": [
+  {
+   "asked": "Phoebe Bridgers",
+   "matched": "Phoebe Bridgers",
+   "id": "AFBC71A7-9439-4AB0-AB68-D14B11AAF836"
+  },
+  {
+   "asked": "The Bear",
+   "matched": "The Bear",
+   "id": "16870F4E-51FC-4A10-8001-BAD4579B084E"
+  },
+  {
+   "asked": "Patagonia",
+   "matched": "Patagonia",
+   "id": "7D458250-9644-4B52-AFFC-02271FFFC725"
+  }
+ ],
+ "brands": [
+  {
+   "id": "4584672D-C702-4E58-AEE3-D8DE584C36C8",
+   "name": "Fender",
+   "affinity": 0.9307161828273967,
+   "popularity": 0.9944398298045465,
+   "website": "",
+   "tags": [
+    "Electronics",
+    "Music Instruments",
+    "Classic Contoured Body Shapes",
+    "Sunburst Finishes",
+    "High-Gloss Lacquer"
+   ]
+  },
+  {
+   "id": "F59D6DB5-5A85-48C6-A2EC-CAAE334D4348",
+   "name": "Dr. Martens",
+   "affinity": 0.9306513271601782,
+   "popularity": 0.9924480005424556,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Footwear",
+    "Other",
+    "Yellow Stitching",
+    "Air-Cushioned Soles"
+   ]
+  },
+  {
+   "id": "93B4EDF6-FF9A-4059-BF78-C1CA1B64B3AD",
+   "name": "Gibson",
+   "affinity": 0.9143104555044953,
+   "popularity": 0.9907443508331779,
+   "website": "",
+   "tags": [
+    "Music Instruments",
+    "Electronics",
+    "Classic Contours",
+    "Vintage Finishes",
+    "Iconic Headstock Shape"
+   ]
+  },
+  {
+   "id": "4F94C666-5FFA-4A42-8453-24C2F779EC36",
+   "name": "Urban Outfitters",
+   "affinity": 0.9134574465251892,
+   "popularity": 0.9985506263667339,
+   "website": "http://www.urbanoutfitters.com",
+   "tags": [
+    "Fashion",
+    "1970 establishments in Pennsylvania",
+    "Companies listed on the Nasdaq",
+    "Companies based in Philadelphia",
+    "Fashion"
+   ]
+  },
+  {
+   "id": "AC8F9047-F23D-4A54-BBAA-A3CBD2991C02",
+   "name": "Vans",
+   "affinity": 0.9039889652307502,
+   "popularity": 0.9996779169703853,
+   "website": "https://www.vans.com/",
+   "tags": [
+    "1990s fashion",
+    "Sportswear brands",
+    "1980s fashion",
+    "2020s fashion",
+    "Lifestyle / Casual"
+   ]
+  },
+  {
+   "id": "62926E8D-2D7E-4428-819E-BF2477D3233F",
+   "name": "Polaroid",
+   "affinity": 0.8983440919645741,
+   "popularity": 0.9796155345730705,
+   "website": "",
+   "tags": [
+    "Electronics",
+    "Camera & Video",
+    "Minimalist Design",
+    "Retro-Inspired Elements",
+    "Bold Primary Colors"
+   ]
+  },
+  {
+   "id": "F1C02FB3-D0DD-428C-A9B1-0A0EE9F22925",
+   "name": "Rolling Stone",
+   "affinity": 0.8959978616195364,
+   "popularity": 0.9986269091895373,
+   "website": "",
+   "tags": [
+    "Website",
+    "Entertainment",
+    "Entertainment",
+    "Media",
+    "Advertising Enabled"
+   ]
+  },
+  {
+   "id": "A5707876-D5A1-49F0-ABF9-A793EA7736D2",
+   "name": "Vice",
+   "affinity": 0.8946119516344168,
+   "popularity": 0.9984912952823312,
+   "website": "https://company.vice.com/",
+   "tags": [
+    "News & Politics",
+    "Advertising Enabled",
+    "Television broadcasting companies of Canada",
+    "Television broadcasting companies of the United States",
+    "Companies based in Brooklyn"
+   ]
+  },
+  {
+   "id": "8EA998B6-B9B0-4EF8-BFD3-7C1E3AFADF63",
+   "name": "Marshall Headphones",
+   "affinity": 0.8910600926041706,
+   "popularity": 0.8073095895984134,
+   "website": "",
+   "tags": [
+    "Electronics",
+    "Headphones",
+    "Textured Vinyl Finishes",
+    "Gold Accents",
+    "Brass Detailing"
+   ]
+  },
+  {
+   "id": "11EA72EF-3C12-44E7-AAD6-699560C23507",
+   "name": "Urbanears",
+   "affinity": 0.8808109070324742,
+   "popularity": 0.6588208370768422,
+   "website": "",
+   "tags": [
+    "Headphones",
+    "Electronics",
+    "Minimalist",
+    "Matte Finishes",
+    "Monochromatic Palettes"
+   ]
+  },
+  {
+   "id": "6D7DE619-CDD6-46DA-A8D6-B480F9D2D980",
+   "name": "Flare Audio",
+   "affinity": 0.8749521670847878,
+   "popularity": 0.782127782204065,
+   "website": "",
+   "tags": [
+    "Electronics",
+    "Gaming",
+    "Minimalist",
+    "Industrial",
+    "Functional"
+   ]
+  },
+  {
+   "id": "7F197629-994D-4A85-9F72-49A54A6FB2AD",
+   "name": "Crap Eyewear",
+   "affinity": 0.8723699632692768,
+   "popularity": 0.8846688477903409,
+   "website": "",
+   "tags": [
+    "Eyewear",
+    "Accessories",
+    "Fashion",
+    "Bold Frames",
+    "Playful Colorways"
+   ]
+  },
+  {
+   "id": "E9A70778-6E65-49A4-8C38-A24D20C05BDA",
+   "name": "Fj\u00e4llr\u00e4ven",
+   "affinity": 0.8718316667090422,
+   "popularity": 0.8794053330169009,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Minimalist",
+    "Utilitarian",
+    "Earth-Toned",
+    "Functional"
+   ]
+  },
+  {
+   "id": "DA5F0DA3-3565-4D32-9613-025BF6C5C765",
+   "name": "Beloved Shirts",
+   "affinity": 0.8713381087700743,
+   "popularity": 0.7907562170500585,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Casual",
+    "Vibrant Colors",
+    "All-Over Prints",
+    "High-Definition Graphic Patterns"
+   ]
+  },
+  {
+   "id": "1A55A450-FDE5-4EF4-9442-FBA4923ACD73",
+   "name": "LA Kings",
+   "affinity": 0.8666723747334742,
+   "popularity": 0,
+   "website": "",
+   "tags": [
+    "National Hockey League",
+    "Sports Organization",
+    "Hockey",
+    "Black And Silver Palette",
+    "Minimalist Logo Design"
+   ]
+  },
+  {
+   "id": "01096D2C-FC7E-463B-BF8D-FDFE3C6B0256",
+   "name": "Buffalo Exchange",
+   "affinity": 0.8609945604436272,
+   "popularity": 0.8537488769473309,
+   "website": "",
+   "tags": [
+    "Retail",
+    "Eclectic",
+    "Well-Organized",
+    "Approachable",
+    "Vibrant"
+   ]
+  },
+  {
+   "id": "D133F55D-047C-4B64-8AEB-9E3041344B12",
+   "name": "Berklee College of Music",
+   "affinity": 0.860162467702589,
+   "popularity": 0.8885592717533183,
+   "website": "",
+   "tags": [
+    "Academic",
+    "Academic",
+    "Professional",
+    "Dynamic",
+    "Modern"
+   ]
+  },
+  {
+   "id": "FF2A57CF-8BCA-4B2B-AEA9-5933E4AF02C7",
+   "name": "Ames Bros",
+   "affinity": 0.8592730616454655,
+   "popularity": 0.4599515180281738,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Casual",
+    "Bold Typography",
+    "Vector Illustration",
+    "Hand-Drawn Details"
+   ]
+  },
+  {
+   "id": "B7E64438-549D-412E-942A-9E3B5BAB4644",
+   "name": "Kanken",
+   "affinity": 0.8563622108557578,
+   "popularity": 0.879846078215321,
+   "website": "",
+   "tags": [
+    "Bags & Leather",
+    "Casual",
+    "Accessories",
+    "Fashion",
+    "Rectangular Silhouette"
+   ]
+  },
+  {
+   "id": "FBE62253-3F5A-49B1-AA1A-A706C03D9C47",
+   "name": "Goorin Bros.",
+   "affinity": 0.8559265359222181,
+   "popularity": 0.8461544981437846,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Graphic Prints",
+    "Animal Motifs",
+    "Classic Silhouettes",
+    "Vibrant Colorways"
+   ]
+  },
+  {
+   "id": "FFA4DAE2-827A-4E48-AA19-0BB40EB73CB9",
+   "name": "Quince",
+   "affinity": 0.85502924707338,
+   "popularity": 0,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Minimalist",
+    "Clean Lines",
+    "Neutral Color Palette",
+    "Understated"
+   ]
+  },
+  {
+   "id": "BB08A3FD-EE47-4B10-838F-3E48FE35D9EA",
+   "name": "Foot Cardigan",
+   "affinity": 0.8548899188387137,
+   "popularity": 0.6717380617382313,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Lingerie & Sleepwear",
+    "Bold Graphics",
+    "Vibrant Patterns",
+    "Colorful"
+   ]
+  },
+  {
+   "id": "407E7455-E02F-42B7-9B89-67AC0E3E1348",
+   "name": "Skagen",
+   "affinity": 0.8547919898426225,
+   "popularity": 0.8913647844586462,
+   "website": "http://www.skagen.com",
+   "tags": [
+    "Companies based in Dallas",
+    "Fashion",
+    "Accessories",
+    "Watch manufacturing companies of the United States",
+    "Danish design"
+   ]
+  },
+  {
+   "id": "14C83080-01FA-47EF-933E-A1F6B3341CCB",
+   "name": "Cariuma",
+   "affinity": 0.8543543521403709,
+   "popularity": 0.8788967808648777,
+   "website": "",
+   "tags": [
+    "Footwear",
+    "Other",
+    "Fashion",
+    "Minimalist",
+    "Vintage-inspired"
+   ]
+  }
+ ],
+ "results": [
+  {
+   "brand": "Fender",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Dr. Martens",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Gibson",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Urban Outfitters",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Vans",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Polaroid",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Rolling Stone",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Vice",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Marshall Headphones",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Urbanears",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Flare Audio",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Crap Eyewear",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Fj\u00e4llr\u00e4ven",
+   "status": "none",
+   "reason": "could not find the brand's own website"
+  },
+  {
+   "brand": "Beloved Shirts",
+   "status": "none",
+   "reason": "could not find the brand's own website"
+  },
+  {
+   "brand": "LA Kings",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Buffalo Exchange",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Berklee College of Music",
+   "status": "none",
+   "reason": "could not find the brand's own website"
+  },
+  {
+   "brand": "Ames Bros",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Kanken",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Goorin Bros.",
+   "status": "none",
+   "reason": "could not find the brand's own website"
+  },
+  {
+   "brand": "Quince",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Foot Cardigan",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Skagen",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Cariuma",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  }
+ ],
+ "recorded": "2026-10-15 12:16",
+ "seconds": 233,
+ "sample_qloo_data": false
+}

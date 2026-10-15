@@ -96,6 +96,8 @@ def site_answers(h):
     try:
         fetch("https://" + h)
         return True
+    except urllib.error.HTTPError:
+        return True                      # a 403 from bot protection still means the site exists
     except Exception:
         return False
 
@@ -113,12 +115,14 @@ def _official_site(brand):
     if brand.get("website"):
         return host(brand["website"])
     s = slug(brand["name"])
+    exact = s + ".com"
+    if len(s) >= 4 and site_answers(exact):        # the brand's own name as a .com is the most likely home
+        return exact
     for url in search("%s official site" % brand["name"]):
         h = host(url)
         if not any(b in h for b in SKIP_HOSTS) and len(s) >= 4 and s[:8] in h.replace("-", "").replace(".", ""):
             return h
-    guess = slug(brand["name"]) + ".com"          # search can come back empty when rate-limited
-    return guess if len(guess) > 6 and site_answers(guess) else ""
+    return ""
 
 
 def best_excerpt(text):
@@ -137,11 +141,21 @@ def candidate_pages(brand):
     site = official_site(brand)
     if not site:
         return []
-    out = []
+    out, listings = [], []
     for q in ("%s free stickers" % brand["name"], "%s free sample request" % brand["name"], "site:%s free sticker OR sample" % site):
         for url in search(q):
+            if AGGREGATOR_RE.search(host(url)) and url not in listings:
+                listings.append(url)           # a freebie list: only used to find the brand's own page, never shown
             if host(url).endswith(site) and url not in out and not re.search(r"confirm|thank|success|cart|checkout|account", url, re.I):
                 out.append(url)
+    for listing in listings[:2]:                # follow the list's own link to the brand's request page
+        try:
+            doc = fetch(listing)
+        except Exception:
+            continue
+        for href in re.findall(r'href=["\'](https?://[^"\'#]+)', doc):
+            if host(href).endswith(site) and re.search(r"sticker|sample|fan-?pack|catalog|swag|decal|swatch", href, re.I) and href not in out:
+                out.append(href)
     for path in GUESS_PATHS:
         url = "https://%s%s" % (site, path)
         if url not in out:
@@ -199,7 +213,7 @@ def check_brand(brand, home=""):
         return {"brand": brand["name"], "status": "none", "reason": "could not find the brand's own website"}
     skipped, loaded = [], 0
     for url in pages:
-        if loaded >= 6:
+        if loaded >= 12:
             break
         if url.startswith("https://" + official_site_cache.get(brand["name"], "~")) and url.endswith(GUESS_PATHS):
             time.sleep(0.4)                         # guessed addresses: go gently, sites rate-limit bursts of 404s

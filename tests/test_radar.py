@@ -32,7 +32,7 @@ class Radar(unittest.TestCase):
         self.assertIsInstance(view["form_fields"], str)     # no inputs in the HTML: flagged as unreadable
 
     def test_taste_with_sample_data(self):
-        t = server.taste(["anything", "  "], "")
+        t = server.taste(["sample", "  "], "")
         self.assertEqual(len(t["understood"]), 1)
         self.assertTrue(t["brands"] and t["brands"][0]["name"])
 

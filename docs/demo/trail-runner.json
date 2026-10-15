@@ -1,0 +1,517 @@
+{
+ "name": "Trail runner",
+ "home": "Orlando, Florida, USA",
+ "likes": [
+  "Saucony",
+  "HOKA",
+  "Runner's World"
+ ],
+ "understood": [
+  {
+   "asked": "Saucony",
+   "matched": "Saucony",
+   "id": "98EB3A31-8860-43BA-82B2-84BC52324DF9"
+  },
+  {
+   "asked": "HOKA",
+   "matched": "HOKA",
+   "id": "B7F13D5E-36A8-4AC4-A5A6-E949DED54050"
+  },
+  {
+   "asked": "Runner's World",
+   "matched": "Runner's World",
+   "id": "7F745B7F-78AE-46A6-A755-8B27B47BA73F"
+  }
+ ],
+ "brands": [
+  {
+   "id": "3C923277-0187-43D2-B2C1-DC6C02F7C2CD",
+   "name": "Brooks Running",
+   "affinity": 0.9772483133248258,
+   "popularity": 0.9722839077147362,
+   "website": "",
+   "tags": [
+    "Sneakers",
+    "Athletic",
+    "Running",
+    "Footwear",
+    "Fashion"
+   ]
+  },
+  {
+   "id": "EC6EE376-A7BD-48E6-8B89-6049ACD77D15",
+   "name": "Ironman Triathlon",
+   "affinity": 0.9519181015518888,
+   "popularity": 0.976360800800122,
+   "website": "",
+   "tags": [
+    "Leagues & Tournaments",
+    "Sports Organization",
+    "Website",
+    "Bold Typography",
+    "High-Contrast Imagery"
+   ]
+  },
+  {
+   "id": "ED156826-ABFE-4CB7-954D-DBB0CBC2D305",
+   "name": "Injinji",
+   "affinity": 0.9275199232399802,
+   "popularity": 0.6727127866962757,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Lingerie & Sleepwear",
+    "Technical",
+    "Minimalist",
+    "Ergonomic Design"
+   ]
+  },
+  {
+   "id": "7E8F2991-2B96-470F-B174-4958E9749E15",
+   "name": "ROKA Eyewear",
+   "affinity": 0.9263758132213722,
+   "popularity": 0.9078673017917988,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Minimalist",
+    "Technical",
+    "Streamlined",
+    "Ergonomic"
+   ]
+  },
+  {
+   "id": "F1545668-5556-4111-8A2E-AC787DD7503A",
+   "name": "Tracksmith",
+   "affinity": 0.9258086347601453,
+   "popularity": 0.8346103642928583,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Athletic",
+    "Casual",
+    "Minimalist",
+    "Vintage-Inspired"
+   ]
+  },
+  {
+   "id": "22A61808-8C64-422B-AED8-721FE5BD9CFB",
+   "name": "Clif Bar",
+   "affinity": 0.9247431670966884,
+   "popularity": 0.9263786001254428,
+   "website": "http://www.clifbar.com/",
+   "tags": [
+    "Packaged",
+    "Brand name snack foods",
+    "Companies based in Emeryville",
+    "Energy food products",
+    "Dietary supplements"
+   ]
+  },
+  {
+   "id": "C8FBC424-A8D9-4BDD-B529-EFC50C05CD82",
+   "name": "World Triathlon",
+   "affinity": 0.9244873970629385,
+   "popularity": 0.9090454476106524,
+   "website": "",
+   "tags": [
+    "Sports Organization",
+    "Leagues & Tournaments",
+    "Professional",
+    "Sport-Oriented",
+    "Clean"
+   ]
+  },
+  {
+   "id": "6D76F9E7-E567-4BC8-847B-0341F676BF1D",
+   "name": "Garmin",
+   "affinity": 0.9243550980861744,
+   "popularity": 0.986031767557763,
+   "website": "http://www.garmin.com/",
+   "tags": [
+    "Satellite navigation",
+    "Schaffhausen",
+    "Marine electronics",
+    "Software",
+    "Watch brands"
+   ]
+  },
+  {
+   "id": "9854873D-6BD2-490A-8CC5-742DA2B7E7C6",
+   "name": "Zootsports",
+   "affinity": 0.9194808622286451,
+   "popularity": 0.681536166533878,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Swimwear",
+    "Aerodynamic Silhouettes",
+    "Technical Fabrics",
+    "High-Visibility Colors"
+   ]
+  },
+  {
+   "id": "45740C7C-21B3-48AA-A44D-C30D0758770B",
+   "name": "Oofos",
+   "affinity": 0.9159477242017583,
+   "popularity": 0.7142275940397688,
+   "website": "",
+   "tags": [
+    "Other",
+    "Footwear",
+    "Fashion",
+    "Ergonomic Shapes",
+    "Minimalist Profiles"
+   ]
+  },
+  {
+   "id": "5C73E147-3674-4677-8402-4D52BB200EE0",
+   "name": "Janji",
+   "affinity": 0.9099247912615948,
+   "popularity": 0.6415724432540557,
+   "website": "",
+   "tags": [
+    "Athletic",
+    "Fashion",
+    "Technical Fabrics",
+    "Earth-Toned Palettes",
+    "Abstract Prints"
+   ]
+  },
+  {
+   "id": "0AE0D3F8-B86D-4EC4-AD8C-E28A8585C65C",
+   "name": "Oiselle",
+   "affinity": 0.9092883873189231,
+   "popularity": 0.8260243087928667,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Athletic",
+    "Technical Silhouette",
+    "Vibrant Colors",
+    "Floral Patterns"
+   ]
+  },
+  {
+   "id": "19B4DEFA-6AE7-44B0-B85F-1222EBECF962",
+   "name": "Gore\u00ae Wear",
+   "affinity": 0.9088138941466132,
+   "popularity": 0.7425200454306589,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Functional",
+    "Minimalist",
+    "Ergonomic",
+    "Streamlined"
+   ]
+  },
+  {
+   "id": "4968B9C7-78FF-487E-87E7-473B6DBD2E1A",
+   "name": "Craft Sportswear",
+   "affinity": 0.9078256281628357,
+   "popularity": 0.7569290230713159,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Athletic",
+    "Minimalist Scandinavian Design",
+    "Technical Construction",
+    "Ergonomic Silhouettes"
+   ]
+  },
+  {
+   "id": "C4375D98-0305-4189-8F90-7C3FCE923A61",
+   "name": "Feetures",
+   "affinity": 0.9019763869945866,
+   "popularity": 0.6122120323439169,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Technical",
+    "Ergonomic",
+    "Functional",
+    "Athletic"
+   ]
+  },
+  {
+   "id": "18757C7E-7D1D-4F10-9CC8-F033025A1302",
+   "name": "Trainingpeaks",
+   "affinity": 0.9011835441110329,
+   "popularity": 0.691139326337916,
+   "website": "",
+   "tags": [
+    "Mobile App",
+    "Software",
+    "Fitness App",
+    "Clean UI",
+    "Data-Heavy Dashboards"
+   ]
+  },
+  {
+   "id": "F60FF9B1-8F28-4279-927B-EAC5B9A4D87C",
+   "name": "Sufferfestbeer",
+   "affinity": 0.8973846997332066,
+   "popularity": 0.5021189673000966,
+   "website": "",
+   "tags": [
+    "Wine & Spirits",
+    "Beer",
+    "Craft",
+    "Rugged",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "15B7295E-1DFD-482A-A76C-27918A88CFC6",
+   "name": "Built With Chocolate Milk",
+   "affinity": 0.897348685789184,
+   "popularity": 0.456052618195996,
+   "website": "",
+   "tags": [
+    "Food & Beverage",
+    "Athletic Imagery",
+    "Action-Oriented",
+    "Bold Typography",
+    "Clean Visuals"
+   ]
+  },
+  {
+   "id": "B8122CD1-AB38-43FC-83E1-7A029CBEFEC5",
+   "name": "GOWOD - Mobility First",
+   "affinity": 0.8964469178540471,
+   "popularity": 0,
+   "website": "",
+   "tags": [
+    "Health & Beauty",
+    "Mobile App",
+    "Fitness App",
+    "Clean",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "27F532B0-9E9B-4A3A-B856-52CC1331AEA7",
+   "name": "Buff\u00ae",
+   "affinity": 0.8928445757667999,
+   "popularity": 0.7579037480293604,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Technical",
+    "Ergonomic",
+    "Minimalist",
+    "Functional Design"
+   ]
+  },
+  {
+   "id": "B9057229-1EF7-4F6A-915F-344060EC8E3D",
+   "name": "Sugoi Performance Apparel",
+   "affinity": 0.8915636101140701,
+   "popularity": 0.3754979573155227,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Athletic",
+    "Technical Design",
+    "Ergonomic Fit",
+    "Minimalist Graphics"
+   ]
+  },
+  {
+   "id": "F5EA6E51-2F04-4714-AAB1-779387D6F2EE",
+   "name": "Smartwool",
+   "affinity": 0.8891700200843723,
+   "popularity": 0.8981200522113543,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Lingerie & Sleepwear",
+    "Athletic",
+    "Functional",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "D1D7B430-DE03-466A-B26D-19CC31FEA0F4",
+   "name": "Ragnar Relay",
+   "affinity": 0.8861718638082853,
+   "popularity": 0.7700750962011155,
+   "website": "",
+   "tags": [
+    "Website",
+    "High Energy",
+    "Outdoor Imagery",
+    "Group Focused",
+    "Athletic"
+   ]
+  },
+  {
+   "id": "545B34F1-1212-4C36-98C3-1B40A3E1A972",
+   "name": "MySwimPro",
+   "affinity": 0.8852590976960505,
+   "popularity": 0.8247868318896103,
+   "website": "",
+   "tags": [
+    "Software",
+    "Clean Minimalist Design",
+    "Bright Athletic Colors",
+    "High-Performance Imagery",
+    "User-Centric Digital Interface"
+   ]
+  }
+ ],
+ "results": [
+  {
+   "brand": "Brooks Running",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Ironman Triathlon",
+   "status": "none",
+   "reason": "could not find the brand's own website"
+  },
+  {
+   "brand": "Injinji",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "ROKA Eyewear",
+   "status": "none",
+   "reason": "could not find the brand's own website"
+  },
+  {
+   "brand": "Tracksmith",
+   "status": "offer",
+   "url": "https://tracksmith.com/catalog-request",
+   "how": "form",
+   "scores": {
+    "offer": 0.93,
+    "mail_or_email": 0.11,
+    "sweepstakes": 0.04,
+    "cause": 0.02,
+    "restricted": 0.12,
+    "excluded": 0.08
+   },
+   "excerpt": "REQUEST A CATALOG Wufoo REQUEST A CATALOG Please fill out the form below to be added to our catalog mailing list. Name First Last Address * Street Address Address Line 2 City State / Province / Region Postal / Zip Code United States United Kingdom Australia Canada France New Zealand India Brazil ---- Afghanistan \u00c5land"
+  },
+  {
+   "brand": "Clif Bar",
+   "status": "skipped",
+   "reason": "not a free-item offer",
+   "url": "https://www.clifbar.com/faqs/why-clif-subscribe",
+   "scores": {
+    "offer": 0.23,
+    "mail_or_email": 0.06,
+    "sweepstakes": 0.04,
+    "cause": 0.01,
+    "restricted": 0.03,
+    "excluded": 0.1
+   }
+  },
+  {
+   "brand": "World Triathlon",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Garmin",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Zootsports",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Oofos",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Janji",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Oiselle",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Gore\u00ae Wear",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Craft Sportswear",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Feetures",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Trainingpeaks",
+   "status": "skipped",
+   "reason": "not a free-item offer",
+   "url": "https://www.trainingpeaks.com/training-plans/running/5km/tp-127267/80-20-running-2024-edition-free-sample-5k-level-1-hr-based-use-coupon-code-try80",
+   "scores": {
+    "offer": 0.36,
+    "mail_or_email": 0.05,
+    "sweepstakes": 0.03,
+    "cause": 0.01,
+    "restricted": 0.04,
+    "excluded": 0.04
+   }
+  },
+  {
+   "brand": "Sufferfestbeer",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Built With Chocolate Milk",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "GOWOD - Mobility First",
+   "status": "none",
+   "reason": "could not find the brand's own website"
+  },
+  {
+   "brand": "Buff\u00ae",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Sugoi Performance Apparel",
+   "status": "none",
+   "reason": "could not find the brand's own website"
+  },
+  {
+   "brand": "Smartwool",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Ragnar Relay",
+   "status": "none",
+   "reason": "could not find the brand's own website"
+  },
+  {
+   "brand": "MySwimPro",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  }
+ ],
+ "recorded": "2026-10-15 12:05",
+ "seconds": 250,
+ "sample_qloo_data": false
+}

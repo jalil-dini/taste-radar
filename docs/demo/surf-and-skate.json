@@ -1,0 +1,499 @@
+{
+ "name": "Surf and skate",
+ "home": "Orlando, Florida, USA",
+ "likes": [
+  "Vans",
+  "Quiksilver",
+  "Billabong"
+ ],
+ "understood": [
+  {
+   "asked": "Vans",
+   "matched": "Vans",
+   "id": "AC8F9047-F23D-4A54-BBAA-A3CBD2991C02"
+  },
+  {
+   "asked": "Quiksilver",
+   "matched": "Quiksilver",
+   "id": "94DCB1F7-A968-4E65-8812-F0B08BFAFEB4"
+  },
+  {
+   "asked": "Billabong",
+   "matched": "Billabong",
+   "id": "666C23E9-5959-4412-98A2-B988EEBB7BBF"
+  }
+ ],
+ "brands": [
+  {
+   "id": "2645AB77-33F2-4A55-ABA3-03ECEBBBBD7B",
+   "name": "Volcom",
+   "affinity": 0.9705706601400507,
+   "popularity": 0.9928887457408757,
+   "website": "http://www.volcom.com/index.asp",
+   "tags": [
+    "2011 mergers and acquisitions",
+    "2010s fashion",
+    "2005 initial public offerings",
+    "Authentic Brands Group",
+    "Snowboarding companies"
+   ]
+  },
+  {
+   "id": "8BEE59A5-BDA6-4B9E-BA83-464799561ED3",
+   "name": "Hurley",
+   "affinity": 0.9608870464543376,
+   "popularity": 0.9701140851994372,
+   "website": "",
+   "tags": [
+    "Athletic",
+    "Casual",
+    "Swimwear",
+    "Fashion",
+    "Graphic Prints"
+   ]
+  },
+  {
+   "id": "B16B7C76-C682-4474-8C83-B6FD37844243",
+   "name": "O'neill",
+   "affinity": 0.9608832720284816,
+   "popularity": 0.9538319404654947,
+   "website": "",
+   "tags": [
+    "Swimwear",
+    "Fashion",
+    "Casual",
+    "Coastal Colors",
+    "Casual Silhouettes"
+   ]
+  },
+  {
+   "id": "41477B0E-3311-49A4-AAC6-43F99E38DDD9",
+   "name": "World Surf League",
+   "affinity": 0.9563404988908911,
+   "popularity": 0.9955247410621959,
+   "website": "",
+   "tags": [
+    "Leagues & Tournaments",
+    "Sports Organization",
+    "Oceanic Imagery",
+    "Dynamic Action Photography",
+    "Natural Textures"
+   ]
+  },
+  {
+   "id": "7C4570FE-9DC0-44EF-BFD5-809904D02BCB",
+   "name": "Rip Curl",
+   "affinity": 0.9555010895115048,
+   "popularity": 0.9881761624654608,
+   "website": "",
+   "tags": [
+    "Casual",
+    "Fashion",
+    "Swimwear",
+    "Technical",
+    "Sporty"
+   ]
+  },
+  {
+   "id": "7DABF90F-30BA-438C-AE44-AFA99C5557FD",
+   "name": "DC Shoes",
+   "affinity": 0.9523397064578829,
+   "popularity": 0.9940160363445272,
+   "website": "",
+   "tags": [
+    "Athletic",
+    "Fashion",
+    "Skateboarding",
+    "Other",
+    "Footwear"
+   ]
+  },
+  {
+   "id": "3381E64E-B7C4-4824-8526-BE33C133C2DF",
+   "name": "GoPro",
+   "affinity": 0.952290131733919,
+   "popularity": 0.9992371717719652,
+   "website": "http://www.gopro.com/",
+   "tags": [
+    "American companies established in 2002",
+    "Technology companies based in the San Francisco Bay Area",
+    "2014 initial public offerings",
+    "Action cameras",
+    "Technology companies established in 2002"
+   ]
+  },
+  {
+   "id": "9DC3F560-9E8C-4D98-89CF-282D5B5440FE",
+   "name": "Nixon",
+   "affinity": 0.9503726786443695,
+   "popularity": 0.9693427811022021,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Watch",
+    "Accessories",
+    "Bags & Leather",
+    "Minimalist Digital Designs"
+   ]
+  },
+  {
+   "id": "355AC84E-F272-4BE1-A01C-ACBF3992F610",
+   "name": "Body Glove",
+   "affinity": 0.9343180923358192,
+   "popularity": 0.807631672628028,
+   "website": "",
+   "tags": [
+    "Swimwear",
+    "Fashion",
+    "Sporty",
+    "Functional",
+    "Performance-Driven"
+   ]
+  },
+  {
+   "id": "93A258B8-2B3E-4998-8FCD-D59218069FBA",
+   "name": "Arnette",
+   "affinity": 0.9042147741884772,
+   "popularity": 0.8277872895865471,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Eyewear",
+    "Accessories",
+    "Bold Silhouettes",
+    "Vibrant Colors"
+   ]
+  },
+  {
+   "id": "349C790F-9260-4CA2-9ECB-FF951118E860",
+   "name": "Rusty Apparel",
+   "affinity": 0.9038496802579283,
+   "popularity": 0.8181756539133088,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Casual",
+    "Graphic-Heavy",
+    "Coastal Palette",
+    "Minimalist Logos"
+   ]
+  },
+  {
+   "id": "8BAD19B4-6F1A-409A-8829-D27FD5D2D98C",
+   "name": "Dakine Surf",
+   "affinity": 0.9026506989007669,
+   "popularity": 0.8635385058737773,
+   "website": "",
+   "tags": [
+    "Swimwear",
+    "Fashion",
+    "Athletic",
+    "Functional Design",
+    "Sporty"
+   ]
+  },
+  {
+   "id": "E4B369BA-9BE5-44FB-A95E-0893F5807148",
+   "name": "Electric",
+   "affinity": 0.9020414526253022,
+   "popularity": 0.8974165550677222,
+   "website": "",
+   "tags": [
+    "Casual",
+    "Fashion",
+    "Minimalist",
+    "Angular",
+    "Contemporary"
+   ]
+  },
+  {
+   "id": "1A55A450-FDE5-4EF4-9442-FBA4923ACD73",
+   "name": "LA Kings",
+   "affinity": 0.8849058753974115,
+   "popularity": 0,
+   "website": "",
+   "tags": [
+    "National Hockey League",
+    "Sports Organization",
+    "Hockey",
+    "Black And Silver Palette",
+    "Minimalist Logo Design"
+   ]
+  },
+  {
+   "id": "1CC35299-BA33-40CE-9D6E-56D4558AEB5A",
+   "name": "Pukas Surf",
+   "affinity": 0.8821865082746034,
+   "popularity": 0.8039870488718618,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Casual",
+    "Minimalist",
+    "Natural Elements",
+    "Ocean-Inspired"
+   ]
+  },
+  {
+   "id": "0C25F2A3-C452-405A-AF40-DCBC52AC97A9",
+   "name": "Dragon",
+   "affinity": 0.8813819368259113,
+   "popularity": 0.8537827804241325,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Casual",
+    "Sport-Oriented",
+    "Functional Design",
+    "Minimalist Frames"
+   ]
+  },
+  {
+   "id": "56236D0D-F895-499A-99EE-82F66F654DE9",
+   "name": "Blue Tomato",
+   "affinity": 0.8812523134018805,
+   "popularity": 0.852214744622061,
+   "website": "https://www.blue-tomato.com/",
+   "tags": [
+    "Fashion",
+    "Casual",
+    "Urban",
+    "Functional",
+    "Sporty"
+   ]
+  },
+  {
+   "id": "4E0CCD36-2A71-4B5D-AF1C-B647175FA053",
+   "name": "Waves For Water",
+   "affinity": 0.8788614504014847,
+   "popularity": 0.7852808055466088,
+   "website": "",
+   "tags": [
+    "NGO",
+    "Environmental NGO",
+    "Minimalist",
+    "Documentary-Style Photography",
+    "Authentic Imagery"
+   ]
+  },
+  {
+   "id": "449BD7D5-5423-425D-9335-9148B6D70B92",
+   "name": "Sanuk",
+   "affinity": 0.8759983057144869,
+   "popularity": 0.8948144632232036,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Casual",
+    "Relaxed",
+    "Unconventional",
+    "Earthy Tones"
+   ]
+  },
+  {
+   "id": "42D6853A-AFAE-4D8E-B632-A4BE95F2CF88",
+   "name": "Matix Clothing",
+   "affinity": 0.8749029390729732,
+   "popularity": 0.7531657371463444,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Casual",
+    "Rugged",
+    "Minimalist",
+    "Casual"
+   ]
+  },
+  {
+   "id": "B1C5FEC5-ECD2-4C0A-9433-277F83C0CA48",
+   "name": "Fallen Footwear",
+   "affinity": 0.8710463798116207,
+   "popularity": 0.80285128239901,
+   "website": "http://www.fallenfootwear.com",
+   "tags": [
+    "Shoe companies of the United States",
+    "Skateboard shoe companies",
+    "Sports footwear",
+    "Skateboarding equipment",
+    "Skateboarding stubs"
+   ]
+  },
+  {
+   "id": "725A45AE-2EC5-4708-8DE9-FE6C93BE10FF",
+   "name": "Zoo York",
+   "affinity": 0.8620577035708853,
+   "popularity": 0.7868403654794799,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Casual",
+    "Graphic Prints",
+    "Urban Photography Imagery",
+    "Minimalist Branding"
+   ]
+  },
+  {
+   "id": "709D89A7-455A-40E4-A0D3-E77201C1C630",
+   "name": "New York Yankees",
+   "affinity": 0.8609160410774297,
+   "popularity": 0,
+   "website": "",
+   "tags": [
+    "Baseball",
+    "Sports Organization",
+    "Major League Baseball",
+    "Pinstripe Uniforms",
+    "Interlocking Lettering"
+   ]
+  },
+  {
+   "id": "9F06DF53-0E22-42C6-877E-19C21A1231B9",
+   "name": "Team Farang",
+   "affinity": 0.8597945246688914,
+   "popularity": 0.8867454357444355,
+   "website": "",
+   "tags": [
+    "Casual",
+    "Fashion",
+    "Minimalist",
+    "Functional",
+    "Street-inspired"
+   ]
+  }
+ ],
+ "results": [
+  {
+   "brand": "Volcom",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Hurley",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "O'neill",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "World Surf League",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Rip Curl",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "DC Shoes",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "GoPro",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Nixon",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Body Glove",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Arnette",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Rusty Apparel",
+   "status": "none",
+   "reason": "could not find the brand's own website"
+  },
+  {
+   "brand": "Dakine Surf",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Electric",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "LA Kings",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Pukas Surf",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Dragon",
+   "status": "none",
+   "reason": "could not find the brand's own website"
+  },
+  {
+   "brand": "Blue Tomato",
+   "status": "offer",
+   "url": "https://www.blue-tomato.com/de-DE/blue-world/products/free-sticker-pack/",
+   "how": "form",
+   "scores": {
+    "offer": 0.62,
+    "mail_or_email": 0.1,
+    "sweepstakes": 0.05,
+    "cause": 0.02,
+    "restricted": 0.05,
+    "excluded": 0.51
+   },
+   "excerpt": "free-sticker-pack\\u002F\",\"o|AH|5V|AI|AJ|5W|AK\",\"o|G|AB|AL\",\"developmentMode\",\"a|AN\",\"o|AO|l\",\"data\",\"loadedGender\",\"activeMobilePath\",\"previousMobileNavigationSection\",\"a|AQ|AR|AS|AT\",\"parentUid\",\"title\",\"hoverColor\",\"a|P|U|4M|AV|Q|AW|4D|1M|4E|E|d|4F|4G|AX|4h\",\"hea-fo-default-streetwear\",\"Streetwear\",\"n|0\",\"itemName\",\""
+  },
+  {
+   "brand": "Waves For Water",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Sanuk",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Matix Clothing",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Fallen Footwear",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Zoo York",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "New York Yankees",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Team Farang",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  }
+ ],
+ "recorded": "2026-10-15 12:09",
+ "seconds": 199,
+ "sample_qloo_data": false
+}

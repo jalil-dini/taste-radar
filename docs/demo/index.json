@@ -1,11 +1,41 @@
 [
  {
-  "slug": "outdoors-and-running",
-  "name": "Outdoors and running",
+  "slug": "trail-runner",
+  "name": "Trail runner",
   "likes": [
-   "Trail running",
-   "Hiking",
-   "Hammocks"
+   "Saucony",
+   "HOKA",
+   "Runner's World"
+  ],
+  "home": "Orlando, Florida, USA"
+ },
+ {
+  "slug": "surf-and-skate",
+  "name": "Surf and skate",
+  "likes": [
+   "Vans",
+   "Quiksilver",
+   "Billabong"
+  ],
+  "home": "Orlando, Florida, USA"
+ },
+ {
+  "slug": "outdoor-adventurer",
+  "name": "Outdoor adventurer",
+  "likes": [
+   "REI",
+   "Yeti",
+   "National Geographic"
+  ],
+  "home": "Orlando, Florida, USA"
+ },
+ {
+  "slug": "indie-music-fan",
+  "name": "Indie music fan",
+  "likes": [
+   "Phoebe Bridgers",
+   "The Bear",
+   "Patagonia"
   ],
   "home": "Orlando, Florida, USA"
  }

@@ -1,0 +1,489 @@
+{
+ "name": "Outdoor adventurer",
+ "home": "Orlando, Florida, USA",
+ "likes": [
+  "REI",
+  "Yeti",
+  "National Geographic"
+ ],
+ "understood": [
+  {
+   "asked": "REI",
+   "matched": "REI",
+   "id": "57F43A76-4C98-4DA4-8D4E-49426440453E"
+  },
+  {
+   "asked": "Yeti",
+   "matched": "YETI",
+   "id": "AA9DBB9A-DEE1-4D84-BC26-0FEBB34BB41B"
+  },
+  {
+   "asked": "National Geographic",
+   "matched": "National Geographic",
+   "id": "61764B63-4D29-43E5-9D9E-2EAF06EBB465"
+  }
+ ],
+ "brands": [
+  {
+   "id": "205AF33F-118E-4C49-9721-6BDBAF981DA0",
+   "name": "Recreational Equipment Inc",
+   "affinity": 0.9760618613742049,
+   "popularity": 0.9928039870488718,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Casual",
+    "Functionalist",
+    "Earth-Toned Palette",
+    "Clean Minimalist Typography"
+   ]
+  },
+  {
+   "id": "DB4CE34E-3A63-4947-946F-9D52502C5762",
+   "name": "Patagonia",
+   "affinity": 0.9636691475347473,
+   "popularity": 0.995923106914614,
+   "website": "",
+   "tags": [
+    "Casual",
+    "Fashion",
+    "Athletic",
+    "Functional",
+    "Earthy Color Palettes"
+   ]
+  },
+  {
+   "id": "2A88D01D-DE7A-410C-9A96-AA079C9AAF59",
+   "name": "Eddie Bauer",
+   "affinity": 0.9488135233937023,
+   "popularity": 0.879956264514926,
+   "website": "https://www.eddiebauer.com/",
+   "tags": [
+    "2009 mergers and acquisitions",
+    "Clothing retailers of the United States",
+    "Fashion",
+    "1920 establishments in Washington (state)",
+    "Clothing companies established in 1920"
+   ]
+  },
+  {
+   "id": "11540186-905B-4FF4-8B1A-B1C05AC68DA3",
+   "name": "Backcountry",
+   "affinity": 0.9452373513376018,
+   "popularity": 0.9799460934718855,
+   "website": "http://www.backcountry.com/",
+   "tags": [
+    "Online retailers of the United States",
+    "Sporting goods retailers of the United States",
+    "Retail companies established in 1996",
+    "Companies based in Salt Lake County",
+    "Retail"
+   ]
+  },
+  {
+   "id": "7A016C85-D68B-446B-9D97-2B2D96ACF6F6",
+   "name": "Backpacker Magazine",
+   "affinity": 0.9440215949483951,
+   "popularity": 0.9661982336288586,
+   "website": "",
+   "tags": [
+    "Entertainment",
+    "Media",
+    "Advertising Enabled",
+    "Travel",
+    "Website"
+   ]
+  },
+  {
+   "id": "18D5DBF4-9CD8-4F4D-8E20-704DE975C93C",
+   "name": "Osprey",
+   "affinity": 0.9409667578062982,
+   "popularity": 0.9598921869437711,
+   "website": "http://www.osprey.com",
+   "tags": [
+    "Fashion",
+    "Bags & Leather",
+    "Accessories",
+    "Technical Design",
+    "Ergonomic Shapes"
+   ]
+  },
+  {
+   "id": "FFD5A801-5B2F-4C40-A502-691F21303D7D",
+   "name": "KEEN Footwear",
+   "affinity": 0.9390424721686456,
+   "popularity": 0.929209540438372,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Utilitarian Design",
+    "Functional Footwear",
+    "Rugged Texture",
+    "Earthy Tones"
+   ]
+  },
+  {
+   "id": "DB03F250-64F3-47AB-8756-BC1C4E13EBFD",
+   "name": "The North Face",
+   "affinity": 0.932774641672292,
+   "popularity": 0.9972453425098744,
+   "website": "https://www.thenorthface.com/",
+   "tags": [
+    "2010s fashion",
+    "Clothing brands of the United States",
+    "Mountaineering equipment manufacturers",
+    "Sneakers",
+    "Clothing companies established in 1966"
+   ]
+  },
+  {
+   "id": "F5EA6E51-2F04-4714-AAB1-779387D6F2EE",
+   "name": "Smartwool",
+   "affinity": 0.9193192542567278,
+   "popularity": 0.8981200522113543,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Lingerie & Sleepwear",
+    "Athletic",
+    "Functional",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "E9A70778-6E65-49A4-8C38-A24D20C05BDA",
+   "name": "Fj\u00e4llr\u00e4ven",
+   "affinity": 0.9140872416405494,
+   "popularity": 0.8794053330169009,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Minimalist",
+    "Utilitarian",
+    "Earth-Toned",
+    "Functional"
+   ]
+  },
+  {
+   "id": "C2A96FA6-1267-486B-83C1-5B9B962D8E32",
+   "name": "Oros",
+   "affinity": 0.90966265103196,
+   "popularity": 0.7274669017307724,
+   "website": "",
+   "tags": [
+    "Casual",
+    "Fashion",
+    "Minimalist",
+    "Sleek",
+    "Technical"
+   ]
+  },
+  {
+   "id": "8F372F03-C58A-49EE-9F6F-C8A05DE189D7",
+   "name": "Eagle Creek",
+   "affinity": 0.9089706970127692,
+   "popularity": 0.854079435846146,
+   "website": "",
+   "tags": [
+    "Bags & Leather",
+    "Accessories",
+    "Fashion",
+    "Utilitarian",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "3D76DFEF-F1F6-4887-9C5F-0897FBAA4189",
+   "name": "Hipcamp",
+   "affinity": 0.9080141728964897,
+   "popularity": 0.8995524741062196,
+   "website": "",
+   "tags": [
+    "Mobile App",
+    "Travel App",
+    "Website",
+    "Booking Platform",
+    "Travel"
+   ]
+  },
+  {
+   "id": "561FE1F0-0A54-472B-BBA7-84BA348F361C",
+   "name": "Airstream",
+   "affinity": 0.9079696118927402,
+   "popularity": 0.8606906138224475,
+   "website": "http://www.airstream.com",
+   "tags": [
+    "Companies based in Ohio",
+    "Streamliners",
+    "Automotive",
+    "Shelby County",
+    "Caravan and travel trailer manufacturers"
+   ]
+  },
+  {
+   "id": "43FC7AA8-579E-4588-BC15-51D0B3DCF9DC",
+   "name": "American Alpine Club",
+   "affinity": 0.9036715759791908,
+   "popularity": 0.8777271109152244,
+   "website": "",
+   "tags": [
+    "Sports NGO",
+    "NGO",
+    "Rugged",
+    "Authentic",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "449BD7D5-5423-425D-9335-9148B6D70B92",
+   "name": "Sanuk",
+   "affinity": 0.9033376695425572,
+   "popularity": 0.8948144632232036,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Casual",
+    "Relaxed",
+    "Unconventional",
+    "Earthy Tones"
+   ]
+  },
+  {
+   "id": "45C58994-BAC9-4FA4-8E29-A6C13DEB07FF",
+   "name": "Western Rise",
+   "affinity": 0.8993055176474045,
+   "popularity": 0.7738722856028886,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Casual",
+    "Minimalist",
+    "Clean Lines",
+    "Technical Fabrics"
+   ]
+  },
+  {
+   "id": "7EC2CAF9-6907-469C-90D8-FDC61E5655FF",
+   "name": "Yakima Racks",
+   "affinity": 0.8989117177291122,
+   "popularity": 0.7917139902697021,
+   "website": "",
+   "tags": [
+    "Automotive",
+    "Rugged",
+    "Functional",
+    "Technical",
+    "Modern"
+   ]
+  },
+  {
+   "id": "58EF7B18-01E0-43D1-905B-EB00D0D3EF6B",
+   "name": "OluKai",
+   "affinity": 0.893063334975383,
+   "popularity": 0.875175874285908,
+   "website": "",
+   "tags": [
+    "Other",
+    "Footwear",
+    "Fashion",
+    "Island-Inspired",
+    "Natural Earth Tones"
+   ]
+  },
+  {
+   "id": "71EA053F-99CE-40F8-8130-627D72850A1F",
+   "name": "Vasque Footwear",
+   "affinity": 0.8908728178926537,
+   "popularity": 0.7405197402993677,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Other",
+    "Footwear",
+    "Rugged",
+    "Functional"
+   ]
+  },
+  {
+   "id": "6E6D227F-CB06-42F3-A42F-4673E368E52C",
+   "name": "Langly Co.",
+   "affinity": 0.8867287898690345,
+   "popularity": 0.8187774406265362,
+   "website": "",
+   "tags": [
+    "Fashion",
+    "Minimalist Design",
+    "Hardwearing Fabrics",
+    "Earth-Tone Palette",
+    "Utility-Focused"
+   ]
+  },
+  {
+   "id": "FE3C6FF2-DD3F-4684-8692-D2C4D86066F5",
+   "name": "United by Blue",
+   "affinity": 0.8854451471830792,
+   "popularity": 0.8603346273160313,
+   "website": "",
+   "tags": [
+    "Casual",
+    "Fashion",
+    "Earth Tones",
+    "Functional Design",
+    "Minimalist"
+   ]
+  },
+  {
+   "id": "B88738CC-8415-4F18-9095-2955EC094B0C",
+   "name": "Icebreaker",
+   "affinity": 0.8824741736272296,
+   "popularity": 0.8168703700564492,
+   "website": "http://www.icebreaker.com/",
+   "tags": [
+    "Outdoor clothing brands",
+    "Clothing companies of New Zealand",
+    "VF Corporation",
+    "2018 mergers and acquisitions",
+    "New Zealand companies established in 1995"
+   ]
+  },
+  {
+   "id": "6740B430-A38D-4715-A234-52A123E41AB6",
+   "name": "National Forest Foundation",
+   "affinity": 0.8809232566682238,
+   "popularity": 0.8333728873896018,
+   "website": "",
+   "tags": [
+    "NGO",
+    "Environmental NGO",
+    "Naturalistic",
+    "Earth Tones",
+    "Minimalist"
+   ]
+  }
+ ],
+ "results": [
+  {
+   "brand": "Recreational Equipment Inc",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Patagonia",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Eddie Bauer",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Backcountry",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Backpacker Magazine",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Osprey",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "KEEN Footwear",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "The North Face",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Smartwool",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Fj\u00e4llr\u00e4ven",
+   "status": "none",
+   "reason": "could not find the brand's own website"
+  },
+  {
+   "brand": "Oros",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Eagle Creek",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Hipcamp",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Airstream",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "American Alpine Club",
+   "status": "none",
+   "reason": "could not find the brand's own website"
+  },
+  {
+   "brand": "Sanuk",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Western Rise",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Yakima Racks",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "OluKai",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Vasque Footwear",
+   "status": "none",
+   "reason": "could not find the brand's own website"
+  },
+  {
+   "brand": "Langly Co.",
+   "status": "none",
+   "reason": "could not find the brand's own website"
+  },
+  {
+   "brand": "United by Blue",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "Icebreaker",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  },
+  {
+   "brand": "National Forest Foundation",
+   "status": "none",
+   "reason": "pages found, but none mention a free item"
+  }
+ ],
+ "recorded": "2026-10-15 12:12",
+ "seconds": 231,
+ "sample_qloo_data": false
+}

@@ -63,14 +63,29 @@ def search(name, types=None):
     return [{"id": e.get("entity_id") or e.get("id"), "name": e.get("name"), "types": e.get("types", [])} for e in found]
 
 
-def brands_for(entity_ids, take=20):
-    payload = _get("/v2/insights", {"filter.type": "urn:entity:brand",
-                                     "signal.interests.entities": ",".join(entity_ids), "take": take})
+def _brand_entities(entity_ids, take, popularity_max=None):
+    params = {"filter.type": "urn:entity:brand", "signal.interests.entities": ",".join(entity_ids), "take": take}
+    if popularity_max:
+        params["filter.popularity.max"] = popularity_max
+    return _entities(_get("/v2/insights", params))
+
+
+def brands_for(entity_ids, take=24, famous=8, small_cap=0.9):
+    """The best-known matches, then smaller brands (popularity under small_cap). Big brands rarely give things away;
+    small and indie brands are the ones that mail stickers and samples, so most slots go to them."""
+    seen, picked = set(), []
+    for batch in (_brand_entities(entity_ids, famous), _brand_entities(entity_ids, take, small_cap)):
+        for e in batch:
+            key = e.get("entity_id") or e.get("id")
+            if key not in seen and len(picked) < take:
+                seen.add(key)
+                picked.append(e)
     out = []
-    for e in _entities(payload):
+    for e in picked:
         props = e.get("properties") or {}
         out.append({"id": e.get("entity_id") or e.get("id"), "name": e.get("name"),
                     "affinity": (e.get("query") or {}).get("affinity") or e.get("affinity"),
-                    "website": props.get("website") or props.get("url") or "",
+                    "popularity": e.get("popularity"),
+                    "website": props.get("official_site") or props.get("website") or props.get("url") or "",
                     "tags": [t.get("name") for t in e.get("tags", [])[:5] if isinstance(t, dict)]})
     return out
